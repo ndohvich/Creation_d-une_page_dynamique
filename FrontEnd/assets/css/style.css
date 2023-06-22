@@ -180,9 +180,21 @@ input[type="submit"]{
 	border-radius: 60px ;
 }
 
+footer{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	color:white;
+	border:0px solid black;
+	border-radius: 3px;
+}
+
 footer nav ul {
+	padding:45px;
 	display: flex;
-	justify-content: flex-end;
-	margin: 2em
+	justify-content: center;
+	margin: 2em;
+	font-weight: bold;
 }
 

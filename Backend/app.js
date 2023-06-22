@@ -10,7 +10,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(helmet());
+app.use(helmet({
+    crossOriginResourcePolicy: false,
+}));
 app.use((req, res, next) => {
     res.removeHeader("Cross-Origin-Embedder-Policy");
     next();
